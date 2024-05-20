@@ -1,0 +1,53 @@
+// media config
+$sizes: (
+  "sm": 440px,
+  "md": 768px,
+  "lg": 960px,
+  "xl": 1280px,
+  "xl2": 1440px,
+  "xxl": 1920px,
+);
+
+@mixin media-max($media) {
+  @each $size, $resolution in $sizes {
+    @if $media==$size {
+      @media only screen and (max-width: ($resolution)-0.5) {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin media-min($media) {
+  @each $size, $resolution in $sizes {
+    @if $media==$size {
+      @media only screen and (min-width: $resolution) {
+        @content;
+      }
+    }
+  }
+}
+
+
+
+// colors
+$color-white: #fff;
+$color-black: #2c2c2c;
+
+$color-gray: #383e42;
+$color-gray-light: #dbdcdd;
+$color-green: #058b8c;
+$color-green-light: #dcebeb;
+
+
+$color-blue: #5ebbdd;
+$color-blue-1: #a4d9ec;
+$color-blue-2: rgba(164, 217, 236, 0.4);
+$color-dark-blue: #0099ce;
+$color-dark-blue-2: #0303b9;
+
+$color-footer: #75c9e6;
+
+$color-red: #c3462e;
+
+$color-red-2: #de7a67;

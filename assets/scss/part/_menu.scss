@@ -1,0 +1,96 @@
+@import "../include/params";
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  .menu__elem {
+    margin-right: 40px;
+    &:last-child{
+      margin-right: 0px;
+    }
+  }
+  .menu__link {
+    font-family: Helvetica;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 23.4px */
+    color: $color-black;
+    transition: color 0.15s linear;
+    &:hover {
+      color: $color-green;
+    }
+  }
+}
+
+@include media-min("md") {
+}
+
+@include media-min("xl") {
+}
+
+@include media-min("xl2") {
+}
+
+@include media-min("xxl") {
+  .menu {
+    .menu__link {
+      font-size: 20px;
+    }
+  }
+}
+
+.mobile-menu {
+  z-index: 999;
+  background-color: $color-white;
+  width: 100%;
+  position: fixed;
+  transition: left 0.5s linear;
+  display: flex;
+  flex-direction: column;
+  left: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+  &_open {
+    left: 0px;
+  }
+  .icon-menu-close {
+    position: absolute;
+    right: 20px;
+    top: 17px;
+  }
+  .logo__img {
+    width: 140px;
+  }
+  .menu__title {
+    font-family: "Kelly Slab";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 26px */
+    color: $color-black;
+    margin-bottom: 24px;
+    margin-top: 90px;
+  }
+  .menu {
+    margin-bottom: 90px;
+    align-items: start;
+
+    .menu__elem {
+      margin-bottom: 24px;
+      &:hover {
+        border-bottom: 0px solid transparent;
+      }
+    }
+    flex-direction: column;
+  }
+  @include media-min("md") {
+    .icon-menu-close {
+      right: 34px;
+      top: 31px;
+    }
+  }
+}

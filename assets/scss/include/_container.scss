@@ -1,0 +1,109 @@
+
+.container {
+  @include media-max("sm") {
+    padding: 40px 20px 40px 20px;
+  }
+  @include media-min("sm") {
+    padding: 40px 20px 40px 20px;
+  }
+  @include media-min("md") {
+    padding: 60px 34px 60px 34px;
+  }
+  @include media-min("lg") {
+    padding: 60px 34px 60px 34px;
+  }
+  @include media-min("xl") {
+    padding: 80px 50px 80px 50px;
+  }
+  @include media-min("xl2") {
+    padding: 100px 70px 100px 70px;
+  }
+  @include media-min("xxl") {
+    padding: 100px 190px 100px 190px;
+  }
+}
+.container-head {
+  @include media-max("sm") {
+    padding: 60px 20px 60px 20px;
+  }
+  @include media-min("sm") {
+    padding: 60px 20px 60px 20px;
+  }
+  @include media-min("md") {
+    padding: 100px 34px 100px 34px;
+  }
+  @include media-min("lg") {
+    padding: 120px 34px 120px 34px;
+  }
+  @include media-min("xl") {
+    padding: 120px 50px 120px 50px;
+  }
+  @include media-min("xl2") {
+    padding: 150px 70px 150px 70px;
+  }
+  @include media-min("xxl") {
+    padding: 150px 190px 150px 190px;
+  }
+}
+
+
+.container-header {
+  @include media-max("sm") {
+    padding: 12px 20px 12px 20px;
+  }
+  @include media-min("sm") {
+    padding: 12px 20px 12px 20px;
+  }
+  @include media-min("md") {
+    padding: 12px 34px 12px 34px;
+  }
+  @include media-min("lg") {
+    padding: 20px 50px 20px 50px;
+  }
+  @include media-min("xl") {
+    padding: 20px 50px 20px 50px;
+  }
+  @include media-min("xl2") {
+    padding: 20px 70px 20px 70px;
+  }
+  @include media-min("xxl") {
+    padding: 20px 190px 20px 190px;
+  }
+}
+
+.container-mobile-menu {
+  @include media-max("sm") {
+    padding: 20px 20px 20px 20px;
+  }
+  @include media-min("sm") {
+    padding: 20px 20px 20px 20px;
+  }
+  @include media-min("md") {
+    padding: 34px 34px 34px 34px;
+  }
+}
+
+.container-footer {
+  @include media-max("sm") {
+    padding: 20px 20px 20px 20px;
+  }
+  @include media-min("sm") {
+    padding: 20px 20px 20px 20px;
+  }
+  @include media-min("md") {
+    padding: 34px 40px 34px 40px;
+  }
+  @include media-min("lg") {
+    padding: 34px 40px 34px 40px;
+  }
+  @include media-min("xl") {
+    padding: 50px 50px 50px 50px;
+  }
+  @include media-min("xl2") {
+    padding: 70px 70px 70px 70px;
+  }
+  @include media-min("xxl") {
+    padding: 60px 190px 60px 190px;
+  }
+}
+

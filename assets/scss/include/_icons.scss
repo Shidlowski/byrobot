@@ -1,0 +1,20 @@
+@import "params";
+
+.icon-menu-open {
+  width: 24px;
+  height: 24px;
+  background: url("../image/icons/icon-menu-open.svg") 100% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.icon-menu-close {
+  width: 24px;
+  height: 24px;
+  background: url("../image/icons/icon-menu-close.svg") 100% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+}
+

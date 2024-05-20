@@ -1,0 +1,65 @@
+@import "../include/params";
+
+.our-cababilities {
+}
+
+.cababilities {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.potential {
+  // border: 1px solid $color-gray;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 10px;
+  .potential__title {
+    font-size: 20px;
+    color: $color-green;
+    text-align: center;
+  }
+  .potential__subtitle {
+    margin-top: 10px;
+    font-size: 16px;
+    display: none;
+  }
+  .potential__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  background-color: $color-green-light;
+}
+
+@include media-min("md") {
+  .potential {
+    width: calc((100% / 2) - (10px / 2));
+    margin-right: 10px;
+    margin-bottom: 10px;
+    &:nth-child(2n) {
+      margin-right: 0px;
+    }
+  }
+}
+
+@include media-min("xl") {
+  .potential {
+    width: calc((100% / 3) - (20px / 3));
+    margin-right: 10px;
+    margin-bottom: 10px;
+    &:nth-child(2n) {
+      margin-right: 10px;
+    }
+    &:nth-child(3n) {
+      margin-right: 0px;
+    }
+  }
+}
+
+@include media-min("xl2") {
+}
+
+@include media-min("xxl") {
+}

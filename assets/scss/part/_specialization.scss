@@ -1,0 +1,40 @@
+@import "../include/params";
+
+.specialization {
+  background-color: $color-gray-light;
+
+  .specialization__list {
+    display: flex;
+    flex-direction: column;
+  }
+  .specialization__elem {
+    background-color: $color-green-light;
+    color: $color-green;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@include media-min("md") {
+  .specialization {
+    .specialization__elem {
+      font-size: 18px;
+    }
+  }
+}
+
+@include media-min("xl") {
+}
+
+@include media-min("xl2") {
+  .specialization {
+    .specialization__elem {
+      font-size: 22px;
+      padding: 20px;
+    }
+  }
+}
+
+@include media-min("xxl") {
+}

@@ -1,0 +1,84 @@
+@import "../include/params";
+
+.robots {
+  .robots__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .robot {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: $color-gray-light;
+    margin-bottom: 10px;
+    padding: 20px;
+    &:nth-child(2n) {
+      .robot__title {
+        margin-left: auto;
+      }
+    }
+  }
+  .robot__title {
+    font-size: 20px;
+    color: $color-gray;
+  }
+
+  .robot__img {
+    position: absolute;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    left: 0px;
+    padding: 20px 20px 0px 20px;
+  }
+}
+
+@include media-min("md") {
+  .robots {
+    .robot {
+      height: 300px;
+      width: calc((100% / 2) - (10px / 2));
+      margin-right: 10px;
+      margin-bottom: 10px;
+      .robot__title {
+        font-size: 26px;
+      }
+      &:nth-child(2n) {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+@include media-min("xl") {
+  .robots {
+    .robot {
+      width: calc((100% / 3) - (20px / 3));
+      margin-right: 10px;
+      margin-bottom: 10px;
+      .robot__title {
+        font-size: 30px;
+      }
+      &:nth-child(n) {
+      }
+      &:nth-child(2n) {
+        margin-right: 10px;
+      }
+      &:nth-child(3n) {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+@include media-min("xl2") {
+}
+
+@include media-min("xxl") {
+}

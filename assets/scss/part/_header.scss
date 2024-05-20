@@ -1,0 +1,96 @@
+@import "../include/params";
+
+.header {
+  z-index: 100;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  background-color: $color-white;
+  box-shadow: 0px 4px 4px 0px rgba(164, 217, 236, 0.4);
+  .header-icon {
+    cursor: pointer;
+    position: relative;
+    animation: animation-top 0.6s 0.5s ease-in-out both;
+  }
+  .header-logo__link {
+    position: relative;
+    animation: animation-top 0.6s 0.5s ease-in-out both;
+  }
+  .header-logo__img {
+    width: 130px;
+  }
+  .header-menu {
+    display: none;
+    .menu__elem {
+      position: relative;
+      &:nth-child(1) {
+        animation: animation-top 0.6s 0.5s ease-in-out both;
+      }
+      &:nth-child(2) {
+        animation: animation-top 0.6s 0.54s ease-in-out both;
+      }
+      &:nth-child(3) {
+        animation: animation-top 0.6s 0.58s ease-in-out both;
+      }
+      &:nth-child(4) {
+        animation: animation-top 0.6s 0.62s ease-in-out both;
+      }
+      &:nth-child(5) {
+        animation: animation-top 0.6s 0.66s ease-in-out both;
+      }
+      &:nth-child(6) {
+        animation: animation-top 0.6s 0.7s ease-in-out both;
+      }
+    }
+  }
+}
+
+@include media-min("md") {
+  .header {
+  }
+}
+
+@include media-min("lg") {
+  .header {
+    position: sticky;
+    top: 0px;
+    .icon-menu-open {
+      display: none;
+    }
+    .header-logo__img {
+      width: 130px;
+    }
+    .header-menu {
+      display: flex;
+    }
+  }
+}
+
+@include media-min("xl") {
+
+}
+
+@include media-min("xl2") {
+  .header {
+    .header-menu {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
+
+@include media-min("xxl") {
+ 
+}
+
+@keyframes animation-top {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 0px;
+  }
+}
