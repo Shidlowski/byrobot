@@ -2,6 +2,7 @@
 
 .projects {
   width: 100%;
+  background-color: $color-green-light;
 }
 
 .projects-slider {
@@ -20,11 +21,10 @@
   .slick-slide > div {
     padding: 0 10px;
   }
-  .slick-dots li button:before
-  {
+  .slick-dots li button:before {
     margin-top: 20px;
-      font-size: 30px;
-      line-height: 20px;
+    font-size: 50px;
+    line-height: 20px;
   }
 }
 

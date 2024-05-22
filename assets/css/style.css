@@ -297,6 +297,7 @@ h6 {
   position: relative;
   -webkit-animation: animation-top 0.6s 0.5s ease-in-out both;
           animation: animation-top 0.6s 0.5s ease-in-out both;
+  margin-right: 40px;
 }
 .header .header-logo__img {
   width: 130px;
@@ -657,7 +658,6 @@ h6 {
   margin-right: 0px;
 }
 .menu .menu__link {
-  font-family: Helvetica;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -817,7 +817,7 @@ h6 {
 }
 
 .block__subtitle {
-  font-family: Helvetica;
+  font-family: "Montserrat Alternates", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -883,19 +883,19 @@ h6 {
 }
 .potential .potential__title {
   font-size: 20px;
-  color: #058b8c;
+  color: #383e42;
   text-align: center;
 }
 .potential .potential__subtitle {
   margin-top: 10px;
   font-size: 16px;
-  display: none;
 }
 .potential .potential__img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+  height: 100px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -910,6 +910,7 @@ h6 {
 }
 @media only screen and (min-width: 1280px) {
   .potential {
+    padding: 30px;
     width: calc(33.3333333333% - 6.6666666667px);
     margin-right: 10px;
     margin-bottom: 10px;
@@ -928,22 +929,65 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .specialization .specialization__elem {
   background-color: #dcebeb;
-  color: #058b8c;
-  border-radius: 15px;
+  color: #383e42;
   padding: 10px;
   margin-bottom: 10px;
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
   .specialization .specialization__elem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
     font-size: 18px;
+    width: calc(50% - 5px);
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .specialization .specialization__elem:nth-child(2n) {
+    margin-right: 0px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .specialization .specialization__elem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    width: calc(33.3333333333% - 6.6666666667px);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+  }
+  .specialization .specialization__elem:nth-child(2n) {
+    margin-right: 10px;
+  }
+  .specialization .specialization__elem:nth-child(3n) {
+    margin-right: 0px;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -1033,6 +1077,7 @@ h6 {
 }
 .projects {
   width: 100%;
+  background-color: #dcebeb;
 }
 
 .projects-slider {
@@ -1054,7 +1099,7 @@ h6 {
 }
 .projects-slider .slick-dots li button:before {
   margin-top: 20px;
-  font-size: 30px;
+  font-size: 50px;
   line-height: 20px;
 }
 
@@ -1074,7 +1119,7 @@ h6 {
   }
 }
 body {
-  font-family: "Helvetica";
+  font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   line-height: normal;
   color: #2c2c2c;

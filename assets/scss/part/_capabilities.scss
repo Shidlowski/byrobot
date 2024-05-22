@@ -16,19 +16,19 @@
   margin-bottom: 10px;
   .potential__title {
     font-size: 20px;
-    color: $color-green;
+    color: $color-gray;
     text-align: center;
   }
   .potential__subtitle {
     margin-top: 10px;
     font-size: 16px;
-    display: none;
   }
   .potential__img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+    height: 100px;
   }
   background-color: $color-green-light;
 }
@@ -46,6 +46,7 @@
 
 @include media-min("xl") {
   .potential {
+    padding: 30px;
     width: calc((100% / 3) - (20px / 3));
     margin-right: 10px;
     margin-bottom: 10px;
