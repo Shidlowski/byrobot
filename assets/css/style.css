@@ -378,7 +378,7 @@ h6 {
   position: relative;
 }
 .footer .footer__title {
-  font-family: "Kelly Slab";
+  font-family: "Montserrat Alternates", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -386,7 +386,7 @@ h6 {
   margin-bottom: 20px;
 }
 .footer .footer__subtitle {
-  font-family: Helvetica;
+  font-family: "Montserrat Alternates", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -440,7 +440,7 @@ h6 {
   position: absolute;
   right: 50px;
   top: 30px;
-  font-family: "Kelly Slab";
+  font-family: "Montserrat Alternates", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -481,7 +481,7 @@ h6 {
           transform: rotate(45deg);
 }
 .footer .menu__title {
-  font-family: "Kelly Slab";
+  font-family: "Montserrat Alternates", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -513,7 +513,7 @@ h6 {
   color: #fff;
 }
 .footer .footer-connect .footer-connect__title {
-  font-family: "Kelly Slab";
+  font-family: "Montserrat Alternates", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -706,7 +706,7 @@ h6 {
   width: 140px;
 }
 .mobile-menu .menu__title {
-  font-family: "Kelly Slab";
+  font-family: "Montserrat Alternates", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
