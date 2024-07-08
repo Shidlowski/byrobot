@@ -25,8 +25,16 @@
   }
   .header-menu {
     display: none;
+    .menu__link{
+      padding: 10px;
+      transition: background-color 0.2s linear;
+      &:hover{
+        background-color: $color-blue-2;
+      }
+    }
     .menu__elem {
       position: relative;
+      margin-right: 20px;
       &:nth-child(1) {
         animation: animation-top 0.6s 0.5s ease-in-out both;
       }
@@ -71,7 +79,6 @@
 }
 
 @include media-min("xl") {
-
 }
 
 @include media-min("xl2") {
@@ -84,7 +91,6 @@
 }
 
 @include media-min("xxl") {
- 
 }
 
 @keyframes animation-top {

@@ -1,7 +1,7 @@
 @import "../include/params";
 
 .specialization {
-  background-color: $color-gray-light;
+  background-color: $color-gray-light-transparent;
 
   .specialization__list {
     display: flex;
@@ -14,6 +14,10 @@
     padding: 10px;
     margin-bottom: 10px;
     width: 100%;
+    border-radius: 15px;
+  }
+  .abbreviation{
+    font-family: Rubic;
   }
 }
 

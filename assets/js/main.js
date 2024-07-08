@@ -1,4 +1,4 @@
-jQuery(function ($) {
+jQuery(function (jQuery) {
   jQuery("#mobile-menu-open").click(function (e) {
     jQuery(".mobile-menu").addClass("mobile-menu_open");
     jQuery("body").addClass("fixed");
@@ -56,46 +56,22 @@ jQuery(function ($) {
     ],
   });
 
-  // function elementInViewport(el) {
-  //   var bounds = el.getBoundingClientRect();
-  //   return (
-  //     bounds.top + bounds.height > 0 && // Елемент ниже верхней границы
-  //     window.innerHeight - bounds.top > 0 && // Выше нижней
-  //     bounds.left + bounds.width > 0 && // Правее левой
-  //     window.innerWidth - bounds.left > 0 // Левее правой
-  //   );
-  // }
-  // jQuery(window).on("scroll", (e) => {
-  //   var el = jQuery(".consultation");
-  //   var inViewport = elementInViewport(el[0]);
-  //   if (inViewport) {
-  //     jQuery(".object-cown").addClass("active");
-  //   } else {
-  //     jQuery(".object-cown").removeClass("active");
-  //   }
-  // });
-
-  // // ask form
-  // document.addEventListener(
-  //   "wpcf7mailsent",
-  //   function (event) {
-  //     if ((event.detail.contactFormId == 38)) {
-  //       jQuery(".ask-confirm").addClass("active");
-  //     } else if ((event.detail.contactFormId == 39)) {
-  //       jQuery(".consultation-confirm").addClass("active");
-  //     }
-  //   },
-  //   false
-  // );
-
-  // jQuery("#ask-reset").click(function (e) {
-  //   jQuery(".ask-confirm").removeClass("active");
-  //   jQuery("#ask-form")[0].reset();
-  // });
-
-  // //consultation form
-  // jQuery("#consultation-reset").click(function (e) {
-  //   jQuery(".consultation-confirm").removeClass("active");
-  //   jQuery("#consultation-form")[0].reset();
-  // });
+  jQuery('body').append('<div class="upbtn"></div>');
+  jQuery(window).scroll(function() {
+      if (jQuery(this).scrollTop() > 100) {
+          jQuery('.upbtn').css({
+              transform: 'scale(1)'
+          });
+          } else {
+          jQuery('.upbtn').css({
+              transform: 'scale(0)'
+          });
+      }
+  });
+  jQuery('.upbtn').on('click',function() {
+      jQuery('html, body').animate({
+          scrollTop: 0
+      }, 500);
+      return false;
+  });
 });
